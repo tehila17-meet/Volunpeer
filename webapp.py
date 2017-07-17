@@ -2,6 +2,7 @@ from flask import *
 from flask import session as login_session
 from database import *
 from werkzeug.utils import secure_filename
+from passlib.hash import pbkdf2_sha256 as crypt
 import os
 
 
